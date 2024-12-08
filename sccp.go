@@ -65,7 +65,10 @@ func ParseMessage(b []byte) (Message, error) {
 	case CREF:
 	case RLSD:
 	case RLC:
-	case DT1:
+	*/
+	case MsgTypeDT1:
+		m = &DT1{}
+	/* TODO: implement!
 	case DT2:
 	case AK:
 	*/
